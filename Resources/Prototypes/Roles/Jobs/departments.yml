@@ -107,7 +107,8 @@
   - HeadOfSecurity
   - SecurityCadet
   - SecurityOfficer
-  - SeniorOfficer
+  - SeniorOfficer # Corvax-Next-MentorRoles
+  - Brigmedic # Corvax-Next-Brigmedic
   - Pilot # Corvax-Pilot
   - Detective
   - Warden
