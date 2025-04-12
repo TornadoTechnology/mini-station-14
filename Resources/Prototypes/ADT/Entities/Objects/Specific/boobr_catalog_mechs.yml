@@ -3,8 +3,8 @@
 - type: entity
   parent: [BaseItem,  ADTStorePresetUplinkERTMech]
   id: ADTertMechUplink
-  name: Блюспейс магазин мехов ОБР
-  description: Надерите задницу синдикату!
+  name: ERT Mech Uplink
+  description: ERT Mech Uplink
   suffix: Against Nukie
   components:
   - type: Sprite
@@ -27,8 +27,8 @@
 - type: entity
   parent: [BaseItem,  ADTStorePresetUplinkERTRevolutionalMech]
   id: ADTertRevolutionaryMechUplink
-  name: Блюспейс магазин мехов ОБР
-  description: Надерите задницу синдикату!
+  name: ERT Mech Uplink
+  description: ERT Mech Uplink
   suffix: Against Revolutionary
   components:
   - type: Sprite
