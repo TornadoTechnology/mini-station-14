@@ -1,10 +1,10 @@
-﻿using Content.Shared.Inventory;
+using Content.Shared.Inventory;
 
 namespace Content.Shared.Corvax.TTS;
 
 public sealed class TransformSpeakerVoiceEvent : EntityEventArgs, IInventoryRelayEvent
 {
-    public SlotFlags TargetSlots => SlotFlags.MASK;
+    public SlotFlags TargetSlots { get; } = SlotFlags.WITHOUT_POCKET;
     public EntityUid Sender;
     public string VoiceId;
 
@@ -13,5 +13,4 @@ public sealed class TransformSpeakerVoiceEvent : EntityEventArgs, IInventoryRela
         Sender = sender;
         VoiceId = voiceId;
     }
-
 }
