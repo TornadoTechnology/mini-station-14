@@ -150,7 +150,5 @@
   components:
   - type: HumanoidAppearance
     species: IPC
-    hair: []  # Пустой список = нет причесок
-    facialHair: []  # Пустой список = нет бород
   - type: Inventory
     templateId: ipc
