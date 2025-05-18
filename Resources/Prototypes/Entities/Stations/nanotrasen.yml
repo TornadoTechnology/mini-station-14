@@ -23,7 +23,8 @@
     - BaseStationAlertLevels
     - BaseStationMagnet
     - BaseStationExpeditions
-    - BaseStationSiliconLawNTDefault # Corvax-NTDefault
+    - BaseStationSalvageJobs
+    - BaseStationSiliconLawCrewsimov
     - BaseStationAllEventsEligible
     - BaseStationNanotrasen
     - BaseStationStockMarket # Corvax-Next-StockTrading

@@ -13,6 +13,7 @@
     - id: SalvageShuttleConsoleCircuitboard
     - id: SalvageExpeditionsComputerCircuitboard
     - id: SalvageMagnetMachineCircuitboard
+    - id: SalvageJobBoardComputerCircuitboard
     - id: CigPackGreen
       prob: 0.50
     - id: ClothingHeadsetAltCargo
