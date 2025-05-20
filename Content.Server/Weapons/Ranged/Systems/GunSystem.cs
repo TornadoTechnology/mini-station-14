@@ -35,7 +35,6 @@ public sealed partial class GunSystem : SharedGunSystem
     [Dependency] private readonly SharedColorFlashEffectSystem _color = default!;
     [Dependency] private readonly SharedStaminaSystem _stamina = default!;
     [Dependency] private readonly SharedContainerSystem _container = default!;
-    [Dependency] private readonly SharedSkillsSystem _skills = default!;
     [Dependency] private readonly SharedMapSystem _map = default!;
 
     private const float DamagePitchVariation = 0.05f;
