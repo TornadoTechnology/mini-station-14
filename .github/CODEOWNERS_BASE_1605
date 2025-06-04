@@ -1,0 +1,19 @@
+# Last match in file takes precedence.
+
+# Ping for all PRs
+* @JerryImMouse
+
+# C#
+*.cs @Tornado-Technology @FireNameFN
+
+# Prototypes
+*.yml @Vonsant
+
+# Map files
+/Resources/Prototypes/Maps/** @Ko4ergaPunk
+/Resources/Prototypes/Corvax/Maps** @Ko4ergaPunk
+/Resources/Maps/** @Ko4ergaPunk
+
+# TTS
+
+/Content.*/Corvax/TTS @Morb0

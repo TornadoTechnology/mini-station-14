@@ -1,0 +1,11 @@
+# Last match in file takes precedence.
+
+# C#
+*.cs @Tornado-Technology @FireNameFN
+
+# Prototypes
+*.yml @Vonsant
+
+# TTS
+
+/Content.*/Corvax/TTS @Morb0
