@@ -1,0 +1,56 @@
+- type: entity
+  id: BorgChassisErtAssault
+  parent: BaseBorgChassisNT
+  name: Штурмовой Борг ОБР
+  description: Буп, бип! Бойся враг!
+  components:
+    - type: Sprite
+      sprite: _Mini/Mobs/Silicon/chassis.rsi
+      layers:
+        - state: ert
+        - state: ert_e
+          map: ["enum.BorgVisualLayers.Light"]
+          shader: unshaded
+          visible: false
+        - state: ert_l
+          shader: unshaded
+          map: ["light"]
+          visible: false
+        - state: ert_moving        # Анимация движения
+          visible: false           # По умолчанию скрыта
+          map: ["spriteBodyMovementState: ert_moving"]  # Будет включаться при движении
+    - type: BorgChassis
+      maxModules: 4
+      moduleWhitelist:
+        tags:
+          - BorgModuleGeneric
+          - BorgModuleSyndicate
+          - BorgModuleSyndicateAssault
+      hasMindState: ert_e
+      noMindState: ert
+    - type: MobThresholds
+      thresholds:
+       0: Alive
+       300: Dead
+    - type: BorgTransponder
+      sprite:
+        sprite: Mobs/Silicon/chassis.rsi
+        state: robot
+      name: cyborg
+    - type: InteractionPopup
+      interactSuccessString: petting-success-syndicate-cyborg
+      interactFailureString: petting-failure-syndicate-cyborg
+      interactSuccessSound:
+        path: /Audio/Ambience/Objects/periodic_beep.ogg
+    - type: GhostRole
+      name: ghost-role-information-syndicate-cyborg-assault-name
+      description: ghost-role-information-syndicate-cyborg-description
+      rules: ghost-role-information-silicon-rules
+      raffle:
+      settings: default
+    - type: GhostTakeoverAvailable
+    - type: ItemSlots
+      slots:
+        cell_slot:
+          name: power-cell-slot-component-slot-name-default
+          startingItem: PowerCellHyper
