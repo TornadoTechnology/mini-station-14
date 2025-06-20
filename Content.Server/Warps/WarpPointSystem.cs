@@ -1,13 +1,14 @@
 using System.Linq;
 using Content.Shared.Examine;
 using Content.Shared.Ghost;
+using Content.Shared.Warps;
 
 namespace Content.Server.Warps;
 
 public sealed class WarpPointSystem : EntitySystem
 {
     private Dictionary<string, EntityUid> warpPoints = new Dictionary<string, EntityUid>(); // Corvax-Next-Warper
-	
+
     public override void Initialize()
     {
         base.Initialize();
