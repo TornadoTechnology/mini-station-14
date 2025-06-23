@@ -35,3 +35,8 @@
   - BlueShield # ADT-Roles
   - GenpopEnter
   - GenpopLeave
+
+- type: accessGroup
+  id: General
+  tags:
+  - Maintenance
